@@ -35,8 +35,8 @@ const uploadFile = async (e) => {
   formData.append("file", file.value);
   const headers = {
     "Content-Type": "application/json",
-    X_API_KEY: "VTCD_PRIVATE_093a7a3f-f0f7-4db3-aab8-b577f289552b", // Add your api key here
-    X_ROUTE_NAME: "user-images",
+    X_API_KEY: import.meta.env.VITE_VETACLOUD_PRIVATE_KEY, // Add your api key here
+    X_ROUTE_NAME: import.meta.env.VITE_VETACLOUD_ROUTE_NAME,
   };
 
   const data = await axios({
