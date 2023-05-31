@@ -26,7 +26,7 @@ const setFile = (e) => {
 }
 const uploadFile = async (e) => {
   e.preventDefault();
-  if (!file.value) { 
+  if (!file.value) {  
     alert("Please select a file");
     return;
   }
